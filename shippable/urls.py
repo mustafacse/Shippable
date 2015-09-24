@@ -17,6 +17,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^myPage','git.views.getIssues'),
+    url(r'^', 'git.views.getIssues'),
+    #url(r'^myPage','git.views.getIssues'),
 ]
