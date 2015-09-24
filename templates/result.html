@@ -1,0 +1,28 @@
+<html>
+<h1>Results </h1>
+<h2>User : {{username}}</h2>
+<h2>Repository : {{reponame}}</h2>
+<br>
+<table style="width:100%" border = "1">
+<tr>
+<th>Category</th>
+<th>No. of issues</th>
+</tr>
+<tr>
+<td>Total number of open issues</td>
+<td>{{openissues}}</td>
+</tr>
+<tr>
+<td>Number of open issues that were opened in the last 24 hours</td>
+<td>{{24HR}}</td>
+</tr>
+<tr>
+<td>Number of open issues that were opened more than 24 hours ago but less than 7 days ago</td>
+<td>{{sevenDaysAgo}}</td>
+</tr>
+<tr>
+<td>Number of open issues that were opened more than 7 days ago</td>
+<td>{{after7Days}}</td>
+</tr>
+</table>
+</html>
