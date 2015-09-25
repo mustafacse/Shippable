@@ -53,7 +53,7 @@ def getIssues(request):
         flag = False    #a flag to iterate till we don't end up with pull issues
         
         while flag != True:
-            pulls_data= requests.get('https://api.github.com/repos/'+username+'/'+reponame+'/pulls?page='+fun(page))   #github api to get pull issues
+            pulls_data= requests.get('https://api.github.com/repos/'+username+'/'+reponame+'/pulls?page='+fun(page)+'&per_page=100')   #github api to get pull issues
             result = pulls_data.json()    #get the json data from response object of above query
             if len(result) < 30:       #we have requested for 100 info per page so if info is less than 100 that means we are done
                 pulls += len(result)    #save the pull requests count and set flag to true to get out of the loop
