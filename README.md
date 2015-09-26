@@ -39,6 +39,6 @@ My Approach :
 
 (7) Print the above data on a html page. (Done!!!!!)
  
- Note : For main code got to git folder and  check views.py. 
+ Note : For main code go to git folder and  check views.py. 
          
 Link of heroku deployment : https://open-issue-count.herokuapp.com
