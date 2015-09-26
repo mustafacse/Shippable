@@ -28,7 +28,7 @@ My Approach :
 
 (3) In next step I have calculated the time of last 24hour and store in a string with the same format as github json data have. Then called github api using since to get all info of issues which were created within 24 hours. I have checked whether information date is greater or not if greater than increment the 24 hours count and check for pull request if it is pull also then increment pull counts.At the end of this loop if I subtract pull count from 24 hours count. I will get open issues within 24 hrs. (First goal is covered)
 
-(4) Next goal is calculate the total no of open issues occured in last 7 days but after 24 hours of current time. I have stored date time of last 7th day from the current system time. Again use the github api with since call to get data within 7 days.I have checked all information of last 7 days and if the created date satisfy the time range increment within7days count and also check for pull request if it is then increment the pull request count.
+(4) Next goal is to calculate the total no of open issues occured in last 7 days but after 24 hours of current time. I have stored date time of last 7th day from the current system time. Again use the github api with since call to get data within 7 days.I have checked all information of last 7 days and if the created date satisfy the time range increment within7days count and also check for pull request if it is then increment the pull request count.
 
 (5) We have calculated till 7 days now rest of all data definitely fall in last category. So no need to iterate further.
 
